@@ -1,0 +1,15 @@
+value = int(input("Enter value of order:"))
+postcharge = 5
+print("do you want to pay £5 for next day delivery?")
+postagecode = ("Enter 1 of next day delivery or 2 for 2nd class delivery")
+
+
+if value < 15 and postagecode == 2:
+    postcharge = 3.50
+
+else:
+    if value >= 15 and postagecode == 2:
+        postcharge = 0 
+
+totalcharge = value + postcharge
+print(postcharge, totalcharge)
